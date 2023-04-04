@@ -1,18 +1,32 @@
 @import "../node_modules/bootstrap/scss/variables";
 
 $black: #132141;
-$light-blue: #F3F6FA;
+$light: #F3F6FA;
+$primary: #0E4ACD;
 $secondary: #10BD99;
 
 $theme-colors: (
-    "black": $black,
-    "light-blue": $light-blue,
-    "secondary": $secondary,
+  "black": $black,
+  "light": $light,
+  "primary": $primary,
+  "secondary": $secondary,
 );
+
+$container-max-widths: (
+  xs: 360px,
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1020px,
+);
+
+$container-padding-x: .625rem;
 
 $font-family-sans-serif: 'Golos Text', sans-serif;
 
 $body-color: $black;
+
+$link-color: $secondary;
 
 $h1-font-size: 3.5rem;
 
