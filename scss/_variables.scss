@@ -1,0 +1,21 @@
+@import "../node_modules/bootstrap/scss/variables";
+
+$black: #132141;
+$light-blue: #F3F6FA;
+$secondary: #10BD99;
+
+$theme-colors: (
+    "black": $black,
+    "light-blue": $light-blue,
+    "secondary": $secondary,
+);
+
+$font-family-sans-serif: 'Golos Text', sans-serif;
+
+$body-color: $black;
+
+$h1-font-size: 3.5rem;
+
+$headings-font-weight: $font-weight-bold;
+
+$border-radius: .5rem;
