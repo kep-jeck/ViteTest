@@ -14,21 +14,29 @@ $theme-colors: (
 
 $container-max-widths: (
   xs: 360px,
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
   xl: 1020px,
+);
+
+$spacer: 2rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .75,
+  2: $spacer * .875,
+  3: $spacer,
+  4: $spacer * 1.125,
+  5: $spacer * 1.25,
 );
 
 $container-padding-x: .625rem;
 
-$font-family-sans-serif: 'Golos Text', sans-serif;
+$font-family-sans-serif: 'Golos Text',
+  sans-serif;
 
 $body-color: $black;
 
 $link-color: $secondary;
 
-$h1-font-size: 3.5rem;
+// $h1-font-size: 3.5rem;
 
 $headings-font-weight: $font-weight-bold;
 

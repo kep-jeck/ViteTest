@@ -1,1 +1,15 @@
+@media (min-width: 1200px) {
 
+  h1,
+  .h1 {
+    font-size: 3.5rem;
+  }
+
+}
+
+@media (max-width: 1200px) {
+
+  .form-btn {
+    width: 100%;
+  }
+}
