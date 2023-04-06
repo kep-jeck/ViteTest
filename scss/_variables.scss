@@ -1,15 +1,26 @@
-@import "../node_modules/bootstrap/scss/variables";
-
 $black: #132141;
-$light: #F3F6FA;
-$primary: #0E4ACD;
-$secondary: #10BD99;
+$gray-100: #F3F6FA;
+$blue: #0E4ACD;
+$green: #10BD99;
+
+$colors: (
+  "black": $black,
+  "blue": $blue,
+  "green": $green,
+);
+
+$grays: (
+  "100": $gray-100,
+);
+
+$primary: $blue;
+$success: $green;
+$light: $gray-100;
 
 $theme-colors: (
-  "black": $black,
-  "light": $light,
   "primary": $primary,
-  "secondary": $secondary,
+  "success": $success,
+  "light": $light,
 );
 
 $container-max-widths: (
@@ -17,14 +28,25 @@ $container-max-widths: (
   xl: 1020px,
 );
 
-$spacer: 2rem;
+$spacer: 1rem;
 $spacers: (
   0: 0,
-  1: $spacer * .75,
-  2: $spacer * .875,
-  3: $spacer,
-  4: $spacer * 1.125,
-  5: $spacer * 1.25,
+  1: $spacer * .5,
+  //8px
+  2: $spacer,
+  //16px
+  3: $spacer * 1.25,
+  //20px
+  4: $spacer * 1.5,
+  //24px
+  5: $spacer * 1.875,
+  //30px
+  6: $spacer * 2.5,
+  //40px
+  7: $spacer * 4,
+  //64px
+  8: $spacer * 5,
+  //80px
 );
 
 $container-padding-x: .625rem;
@@ -34,10 +56,32 @@ $font-family-sans-serif: 'Golos Text',
 
 $body-color: $black;
 
-$link-color: $secondary;
+$link-color: $success;
 
-// $h1-font-size: 3.5rem;
+$enable-rfs: false;
 
+// $font-size-base: 1rem;
+// $font-size-base-xs: $font-size-base * .875;
+// $h1-font-size: $font-size-base * 3.5; // в моб версии 1.5rem
+// $h2-font-size: $font-size-base * 2.75; // в моб версии 1.125rem
+// // $h5-font-size: 1.25 !default      в моб версии .875rem
+// $h6-font-size: $font-size-base * 1.125; // в моб версии .875rem
+
+$font-size-base: .875rem;
+
+// $font-sizes: (
+//   1: $h1-font-size,
+//   2: $h2-font-size,
+//   6: $h6-font-size
+// );
+
+$font-weight-bold: 700;
 $headings-font-weight: $font-weight-bold;
 
 $border-radius: .5rem;
+$border-radius-sm: .5rem;
+$border-radius-lg: .5rem;
+$border-radius-xl: .5rem;
+$border-radius-2xl: .5rem;
+
+$btn-border-radius: $border-radius;
