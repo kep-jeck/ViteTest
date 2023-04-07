@@ -23,33 +23,31 @@ $theme-colors: (
   "light": $light,
 );
 
-$container-max-widths: (
-  xs: 360px,
-  xl: 1020px,
+$grid-breakpoints: (
+  xs: 0,
+  sm: 360px,
+  md: 1020px,
 );
+
+$container-max-widths: (
+  sm: 360px,
+  md: 1020px,
+);
+
+$grid-gutter-width: .625rem;
 
 $spacer: 1rem;
 $spacers: (
   0: 0,
   1: $spacer * .5,
-  //8px
   2: $spacer,
-  //16px
   3: $spacer * 1.25,
-  //20px
   4: $spacer * 1.5,
-  //24px
-  5: $spacer * 1.875,
-  //30px
+  5: $spacer * 1.75,
   6: $spacer * 2.5,
-  //40px
   7: $spacer * 4,
-  //64px
   8: $spacer * 5,
-  //80px
 );
-
-$container-padding-x: .625rem;
 
 $font-family-sans-serif: 'Golos Text',
   sans-serif;
@@ -60,20 +58,15 @@ $link-color: $success;
 
 $enable-rfs: false;
 
-// $font-size-base: 1rem;
-// $font-size-base-xs: $font-size-base * .875;
-// $h1-font-size: $font-size-base * 3.5; // в моб версии 1.5rem
-// $h2-font-size: $font-size-base * 2.75; // в моб версии 1.125rem
-// // $h5-font-size: 1.25 !default      в моб версии .875rem
-// $h6-font-size: $font-size-base * 1.125; // в моб версии .875rem
+$h1-font-size: 3.5rem;
+$h2-font-size: 2.75rem;
+$h6-font-size: 1.125rem;
 
-$font-size-base: .875rem;
-
-// $font-sizes: (
-//   1: $h1-font-size,
-//   2: $h2-font-size,
-//   6: $h6-font-size
-// );
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  6: $h6-font-size
+);
 
 $font-weight-bold: 700;
 $headings-font-weight: $font-weight-bold;
@@ -81,7 +74,8 @@ $headings-font-weight: $font-weight-bold;
 $border-radius: .5rem;
 $border-radius-sm: .5rem;
 $border-radius-lg: .5rem;
-$border-radius-xl: .5rem;
+$border-radius-lg: .5rem;
+$border-radius-md: .5rem;
 $border-radius-2xl: .5rem;
 
 $btn-border-radius: $border-radius;

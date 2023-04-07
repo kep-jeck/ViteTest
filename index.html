@@ -11,20 +11,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&display=swap" rel="stylesheet">
   <!-- styles -->
   <link rel="stylesheet" href="scss/styles.scss">
+  <style>
+    .custom-form h6 {
+      color: var(--bs-primary);
+    }
+
+    .custom-form label {
+      font-size: .875rem;
+    }
+  </style>
 </head>
 
 <body>
   <div class="container">
-    <section class="headline mb-xl-6 mb-5 pt-4">
+    <section class="mb-md-6 mb-5 pt-4">
 
-      <h1 class="mb-xl-7 mb-4">XIX Всероссийский съезд Уполномоченных по правам ребенка в Российской
+      <h1 class="mb-md-7 mb-4">XIX Всероссийский съезд Уполномоченных по правам ребенка в Российской
         Федерации</h1>
-      <p class="d-xl-none rounded bg-light p-4 mb-5">4-5 октября в Пензе состоится XIX Всероссийский съезд
+      <p class="d-md-none rounded bg-light p-4 mb-5">4-5 октября в Пензе состоится XIX Всероссийский съезд
         Уполномоченных
         по правам ребенка в РФ, посвященный вопросам защиты прав детей-инвалидов и детей с ограниченными
         возможностями
         здоровья.</p>
-      <p class="mb-xl-5 mb-5 mb-xl-6">В его работе примут участие уполномоченные по правам ребенка в субъектах
+      <p class="mb-5 mb-md-6">В его работе примут участие уполномоченные по правам ребенка в субъектах
         Российской Федерации, представители Государственной Думы и Федерального Собрания РФ, профильных федеральных
         и
         региональных министерств и ведомств, общественных организаций, заместители глав регионов по социальным
@@ -41,32 +50,33 @@
         детей-инвалидов, вопросы ментального здоровья в целом.
       </p>
 
-      <form class="rounded bg-light p-xl-6 p-3">
-        <h5 class="mb-xl-4 mb-2">Подписаться на новости</h5>
+      <form class="rounded bg-light p-md-6 p-3">
+        <h5 class="mb-md-4 mb-2">Подписаться на новости</h5>
         <div class="row">
-          <div class="col-xl-6 mb-xl-4 mb-2">
-            <label class="form-label mb-1" for="headline__name">Label</label>
-            <input class="form-control" id="headline__name" placeholder="Placeholder">
+          <div class="col-md mb-md-4 mb-2">
+            <label class="form-label mb-1" for="input_name">Label</label>
+            <input class="form-control" id="input_name" placeholder="Placeholder">
           </div>
-          <div class="col-xl-6 mb-xl-4 mb-2">
-            <label class="form-label mb-1" for="headline__e-mail">Label</label>
-            <input class="form-control" id="headline__e-mail" placeholder="Placeholder">
+          <div class="col-md mb-md-4 mb-2">
+            <label class="form-label mb-1" for="input_e-mail">Label</label>
+            <input class="form-control" id="input_e-mail" placeholder="Placeholder">
           </div>
         </div>
-        <div class="mb-xl-4 mb-2">
-          <label class="form-label mb-1" for="headline__textarea">Label</label>
-          <textarea class="form-control" id="headline__textarea" placeholder="Placeholder" rows="2"></textarea>
+
+        <div class="mb-md-4 mb-2">
+          <label class="form-label mb-1" for="textarea">Label</label>
+          <textarea class="form-control" id="textarea" placeholder="Placeholder" rows="2"></textarea>
         </div>
-        <div class="d-grid gap-2 justify-content-xl-end">
+        <div class="d-grid gap-2 justify-content-md-end">
           <button class="btn btn-success">Отправить</button>
         </div>
       </form>
 
     </section>
 
-    <section class="news mb-xl-8 mb-7">
-      <h2 class="mb-xl-6 mb-2">Пензенская область</h2>
-      <p class="mb-xl-6 mb-2">На базе учреждений и организаций Пензенской области, занимающихся реабилитацией и
+    <section class="mb-md-8 mb-7">
+      <h2 class="mb-md-6 mb-2">Пензенская область</h2>
+      <p class="mb-md-6 mb-2">На базе учреждений и организаций Пензенской области, занимающихся реабилитацией и
         работой с детьми-инвалидами и детьми с ограниченными возможностями здоровья, будет представлен региональный
         инновационный опыт в сфере социального обеспечения, медицины, образования. Особое внимание будет уделено
         теме
@@ -90,32 +100,32 @@
         пленарное заседание пройдут в Центре культурного развития «Дом офицеров» (г. Пенза, ул. Ленинградская, 1А) 4
         октября 2022 года, 10.00-11.30. По итогам заседания состоится пресс-подход — 11.30-11.45.
       </p>
-      <p class="mb-xl-6 mb-5">Аккредитация:
+      <p class="mb-md-6 mb-5">Аккредитация:
         <a href="mailto:pressa058@mail.ru">pressa058@mail.ru</a>
         (заявки
         принимаются до 21.00 2 октября).
       </p>
 
-      <div class="rounded bg-light d-flex flex-wrap align-items-center justify-content-between p-xl-6 p-3">
-        <img class="flex-shrink-1 mb-xl-0 mb-4 mw-100" src="assets/img/news-image.svg" loading="lazy">
+      <div class="rounded bg-light d-flex flex-wrap align-items-center justify-content-between p-md-6 p-3">
+        <img class="flex-shrink-1 mb-md-0 mb-4 mw-100" src="assets/img/news-image.svg" loading="lazy">
 
-        <form class="">
-          <h6 class="mb-xl-4 mb-2 text-primary">Подписаться на новости</h6>
+        <form class="custom-form">
+          <h6 class="mb-md-4 mb-2">Подписаться на новости</h6>
           <div class="row">
-            <div class="col-xl-6 mb-xl-4 mb-2">
-              <label class="form-label mb-1" for="news__name">Label</label>
-              <input class="form-control" id="news__name" placeholder="Placeholder">
+            <div class="col-md mb-md-4 mb-2">
+              <label class="form-label mb-1" for="name">Label</label>
+              <input class="form-control" id="name" placeholder="Placeholder">
             </div>
-            <div class="col-xl-6 mb-xl-4 mb-2">
-              <label class="form-label mb-1" for="news__e-mail">Label</label>
-              <input class="form-control" id="news__e-mail" placeholder="Placeholder">
+            <div class="col-md mb-md-4 mb-2">
+              <label class="form-label mb-1" for="e-mail">Label</label>
+              <input class="form-control" id="e-mail" placeholder="Placeholder">
             </div>
           </div>
-          <div class="mb-xl-4 mb-2">
-            <label class="form-label mb-1" for="news__textarea">Label</label>
-            <textarea class="form-control" id="news__textarea" placeholder="Placeholder" rows="2"></textarea>
+          <div class="mb-md-4 mb-2">
+            <label class="form-label mb-1" for="textarea">Label</label>
+            <textarea class="form-control" id="textarea" placeholder="Placeholder" rows="2"></textarea>
           </div>
-          <div class="d-grid gap-2 justify-content-xl-end">
+          <div class="d-grid gap-2 justify-content-md-end">
             <button class="btn btn-success">Отправить</button>
           </div>
         </form>
